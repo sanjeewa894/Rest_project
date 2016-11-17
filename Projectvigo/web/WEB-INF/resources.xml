@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <Resource id="nethfm" type="javax.sql.DataSource">#Thu Nov 17 11:48:13 IST 2016
+jdbcDriver=com.mysql.jdbc.Driver
+password=12188
+userName=root
+jdbcUrl=jdbc\:mysql\://localhost\:3306/NethFM?zeroDateTimeBehavior\=convertToNull
+</Resource>
+</resources>
