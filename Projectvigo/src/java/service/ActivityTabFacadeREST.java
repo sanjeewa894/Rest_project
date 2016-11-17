@@ -57,7 +57,6 @@ public class ActivityTabFacadeREST extends AbstractFacade<ActivityTab> {
 
 
         Helper helperActive = new Helper();
-        Wrapper wrapper = new Wrapper();
         ActivityTab actFill = new ActivityTab();
         actFill = helperActive.validateActFill(Activityseq, activityid, description, promotionid, responsible, parentid, siteid, sdate, edate, note, state);
        
