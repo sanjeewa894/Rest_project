@@ -42,7 +42,7 @@ public class Wrapper {
     /*
     ** create promotion tab entity and set all the parameters and return entity object
     */
-    public PromotionTab fillDB(String responsible, Date sdate, Date edate, String note){
+    public PromotionTab fillDB(String siteId, String promotionId, String description, String type, String responsible, Date sdate, Date edate, String note, String state){
 
         PromotionTabPK promtpk = new PromotionTabPK();
         
@@ -51,14 +51,14 @@ public class Wrapper {
         // PromotionTab promt = new PromotionTab(promtpk,"my testing on insert","type1","my responsible take",sdate,edate,"eyufgyawe ahffyw whfhuWG","close");
        
         //set parameters......
-        promtpk.setSiteId("1");
-        promtpk.setPromotionId("1");
+        promtpk.setSiteId(siteId);
+        promtpk.setPromotionId(promotionId);
         promt.setPromotionTabPK(promtpk);
-        promt.setDescription("my testing on insert");
-        promt.setType("type1");
+        promt.setDescription(description);
+        promt.setType(type);
         promt.setResponsible(responsible);
         promt.setNote(note); 
-        promt.setState("close");
+        promt.setState(state);
         promt.setStartDate(sdate);
         promt.setEndDate(edate);
          

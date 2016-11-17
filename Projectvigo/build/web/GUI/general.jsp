@@ -44,9 +44,21 @@
 
     			
                 
+            <p class="contact"><label for="site_id">Site ID</label></p><br>
+            <input id="site_id" name="siteid" placeholder="site id" required="" tabindex="2" type="text"><br>
+            
+            <p class="contact"><label for="promotion_id">Promotion ID</label></p><br>
+            <input id="promotion_id" name="promotionid" placeholder="promotion id" required="" tabindex="2" type="text"><br>
+         
+            <p class="contact"><label for="descriptin">Description</label></p><br>
+            <input id="description" name="description" placeholder="description" required="" tabindex="2" type="text"><br>
+         
+            <p class="contact"><label for="type">Type</label></p><br>
+            <input id="ty" name="type" placeholder="type" required="" tabindex="2" type="text"><br>
+         
             <p class="contact"><label for="responsible">Responsible</label></p><br>
             <input id="responsible" name="responsible" placeholder="Responsible" required="" tabindex="2" type="text"><br>
-            
+         
             <div>
                 <label>Start Date</label><br><br>
                 <input type="text" id="s_date" name="sdate">
@@ -60,7 +72,10 @@
     			      
             <p class="contact"><label for="note">Note</label></p>
             <textarea id="note" name="note" placeholder="Add a Note here" required=""  tabindex="2" rows="5" cols="50"></textarea><br><br>
-   
+            
+            <p class="contact"><label for="state">State</label></p><br>
+            <input id="state" name="state" placeholder="state" required="" tabindex="2" type="text"><br>
+         
             <input type="submit" value="Login" />
     </form> 
 </div>      

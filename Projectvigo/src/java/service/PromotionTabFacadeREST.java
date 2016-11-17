@@ -77,18 +77,17 @@ public class PromotionTabFacadeREST extends AbstractFacade<PromotionTab> {
     @POST
     @Path("/FillDB")
     @Produces("text/plain")
-    public int getDataFIlled(@FormParam("responsible") String responsible, @FormParam("sdate") Date sdate, 
-            @FormParam("edate") Date edate, @FormParam("note") String note ) {
+    public int getDataFIlled(@FormParam("siteid") String siteId, @FormParam("promotionid") String promotionId, @FormParam("description") String description, @FormParam("type") String type, @FormParam("responsible") String responsible, @FormParam("sdate") Date sdate, @FormParam("edate") Date edate, @FormParam("note") String note, @FormParam("state") String state ) {
            
         
         int done;
         Helper helperfilled = new Helper();
         PromotionTab promtab = new PromotionTab();        
   
-        promtab = helperfilled.validateDataFilled(responsible, sdate,edate, note); //get promtab entity
+        promtab = helperfilled.validateDataFilled(siteId, promotionId, description, type, responsible, sdate, edate, note, state); //get promtab entity
         
             if(promtab != null){
-                super.create(promtab);
+                 super.create(promtab);
                 done =0;
             }else
                 done = -1;

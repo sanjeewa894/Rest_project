@@ -25,7 +25,7 @@ public class Helper {
     ** validate filled data in promotion tab if empty field in form return 1 or error of filled data return -1
     ** on success return 0
     */
-    public PromotionTab validateDataFilled(String responsible, Date sdate, Date edate, String note){
+    public PromotionTab validateDataFilled(String siteId, String promotionId, String description, String type, String responsible, Date sdate, Date edate, String note, String state){
      
         try { 
             if(responsible.isEmpty() ){
@@ -34,7 +34,8 @@ public class Helper {
                
                 Wrapper enterdata= new Wrapper();
               
-            return  enterdata.fillDB(responsible,sdate,edate,note);    
+            return  enterdata.fillDB(siteId, promotionId, description, type, responsible, sdate, 
+            edate, note, state);    
             }           
         }catch(Exception ex){
             return null;        
