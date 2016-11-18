@@ -15,6 +15,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
         <link rel="stylesheet" type="text/css" href="css/demo.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/menubar.css" media="all" />
         <link rel="stylesheet" href="css/jquery-ui.css">
         <script src="js/jquery1.js"></script>
         <script src="js/jquery-ui.js"></script>
@@ -33,6 +34,19 @@
   
 </head>
 <body>
+    
+<div id="hmenu"> 
+    <ul> 
+      <li><a href="./general.jsp">General</a></li> 
+      <li><a href="#">Activity</a></li>
+      <li><a href="#">3 rd Tab</a></li> 
+      <li><a href="#">4 th Tab</a></li> 
+      <li><a href="#">5 th Tab</a></li> 
+      <li><a href="#">6 th Tab</a></li> 
+      <li><a href="#">7 th Tab</a></li>
+    </ul>   
+</div> 
+    
 <div class="container">
 			<!-- freshdesignweb top bar -->
             

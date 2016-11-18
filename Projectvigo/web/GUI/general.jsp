@@ -14,6 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
         <link rel="stylesheet" type="text/css" href="css/demo.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/menubar.css" media="all" />
         <link rel="stylesheet" href="css/jquery-ui.css">
         <script src="js/jquery1.js"></script>
         <script src="js/jquery-ui.js"></script>
@@ -32,6 +33,19 @@
         
 </head>
 <body>
+    
+<div id="hmenu"> 
+    <ul> 
+      <li><a href="#">General</a></li> 
+      <li><a href="./activity.jsp">Activity</a></li>
+      <li><a href="#">3 rd Tab</a></li> 
+      <li><a href="#">4 th Tab</a></li> 
+      <li><a href="#">5 th Tab</a></li> 
+      <li><a href="#">6 th Tab</a></li> 
+      <li><a href="#">7 th Tab</a></li>
+    </ul>   
+</div> 
+    
 <div class="container">
 			<!-- freshdesignweb top bar -->
             
@@ -58,7 +72,7 @@
          
             <p class="contact"><label for="responsible">Responsible</label></p><br>
             <input id="responsible" name="responsible" placeholder="Responsible" required="" tabindex="2" type="text"><br>
-         
+            
             <div>
                 <label>Start Date</label><br><br>
                 <input type="text" id="s_date" name="sdate">
@@ -72,7 +86,7 @@
     			      
             <p class="contact"><label for="note">Note</label></p>
             <textarea id="note" name="note" placeholder="Add a Note here" required=""  tabindex="2" rows="5" cols="50"></textarea><br><br>
-            
+   
             <p class="contact"><label for="state">State</label></p><br>
             <input id="state" name="state" placeholder="state" required="" tabindex="2" type="text"><br>
          
@@ -83,7 +97,3 @@
 
 </body>
 </html>
-
-
-
-
